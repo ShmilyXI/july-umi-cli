@@ -1,0 +1,62 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "test": "umi test",
+    "lint": "eslint {src,mock,tests}/**/*.{ts,tsx} --fix",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "ahooks": "^2.0.1",
+    "antd": "^3.19.5",
+    "dva": "^2.6.0-beta.6",
+    "list": "^2.0.19",
+    "model": "^6.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "@alitajs/hd": "^2.5.5",
+    "@types/jest": "^23.3.12",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-test-renderer": "^16.0.3",
+    "@umijs/preset-react": "^1",
+    "@umijs/preset-ui": "^2.1.15",
+    "axios": "^0.19.2",
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "hasha": "^5.2.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "osdoc-lint": "^1.0.6",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.7.0",
+    "umi": "^3.2.6",
+    "umi-types": "^0.3.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "src/**/*.ts?(x)": [
+      "prettier --parser=typescript --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
