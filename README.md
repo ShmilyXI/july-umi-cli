@@ -1,2 +1,15 @@
-# july-umi-cli
-umi+dva脚手架
+# umi project
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ yarn
+```
+
+Start the dev server,
+
+```bash
+$ yarn start
+```

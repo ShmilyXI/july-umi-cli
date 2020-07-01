@@ -1,27 +1,25 @@
 {
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "experimentalDecorators": true,
-    "jsx": "react",
-    "sourceMap": true,
-    "removeComments": true,
-    "esModuleInterop": true,
-    "importHelpers": true,
-    "allowJs": true,
-    "module": "esnext",
     "target": "esnext",
-    "lib": ["esnext", "dom"],
-    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": "./",
     "strict": true,
     "paths": {
-      "@/*": ["./src/*"],
+      "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"]
     },
-    "allowSyntheticDefaultImports": true,
-    "rootDirs": ["/src", "/test", "/mock", "./typings"]
+    "allowSyntheticDefaultImports": false
   },
-  "include": ["./src", "./mock"],
-  "exclude": ["node_modules"]
+  "include": [
+    "mock/**/*",
+    "src/**/*",
+    "config/**/*",
+    ".umirc.ts",
+    "typings.d.ts"
+  ]
 }
