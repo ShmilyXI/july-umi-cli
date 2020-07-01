@@ -1,9 +1,5 @@
 /*
  * umi配置
- * @Author: ahwgs
- * @Date: 2020-05-23 01:15:06
- * @Last Modified by: ahwgs
- * @Last Modified time: 2020-06-02 00:21:56
  */
 
 import { defineConfig } from 'umi';
@@ -77,25 +73,4 @@ export default defineConfig({
     logLevel: 'info',
     defaultSizes: 'parsed', // stat  // gzip
   },
-  // 依赖提取
-  // chunks: ['vendors', 'umi'],
-  // chainWebpack(config) {
-  //   config.merge({
-  //     optimization: {
-  //       minimize: true,
-  //       splitChunks: {
-  //         chunks: 'all',
-  //         cacheGroups: {
-  //           vendors: {
-  //             name: 'vendors',
-  //             test({ resource }) {
-  //               return /[\\/]node_modules[\\/]/.test(resource);
-  //             },
-  //             priority: 10,
-  //           },
-  //         },
-  //       },
-  //     },
-  //   });
-  // },
 });
